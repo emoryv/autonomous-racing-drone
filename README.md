@@ -2,13 +2,13 @@
 
 **Anduril AI Grand Prix · Software Developer · Summer–Fall 2026**
 
-Contributed to a team-built GPS-denied racing-drone autonomy stack, with a focus on flight-log data preparation and participation in system development and testing.
+I helped build and test software for an autonomous racing drone that navigated without GPS. My work focused on preparing flight-log data for perception models and testing the team's system.
 
 ## My contributions
 
-- Built and tested the autonomy stack as part of the team, working with camera/IMU fusion, a 15-state error-state extended Kalman filter, and 90 Hz geometric control.
-- Curated and cleaned flight-log data for perception-model training and evaluation.
-- Supported the data workflow for an eight-keypoint gate-detection CNN trained on 52,000 auto-labeled frames.
+- Helped build and test the team's autonomy software, working with camera/IMU fusion, a 15-state error-state extended Kalman filter, and 90 Hz geometric control.
+- Selected and cleaned flight-log data for training and evaluating perception models.
+- Helped prepare data for an eight-keypoint gate-detection CNN trained on 52,000 automatically labeled frames.
 
 ## System context
 
@@ -20,7 +20,7 @@ Contributed to a team-built GPS-denied racing-drone autonomy stack, with a focus
 | Control | 90 Hz geometric control |
 | Model deployment | FP16 TensorRT |
 
-The engineering problem connects usable gate observations with state estimation and control so the drone can navigate without GPS.
+The system uses gate detections and camera/IMU data to estimate the drone's motion and guide it through the course.
 
 ## Reported team results
 
@@ -28,11 +28,11 @@ The engineering problem connects usable gate observations with state estimation 
 - A 23% increase in usable PnP fixes.
 - Perception-model deployment using FP16 TensorRT.
 
-The placement and measurements above are reported team outcomes. A team-specific results link and the measurement baseline for the PnP improvement are not included in this repository.
+These are team results. This write-up does not include a public placement record or the baseline measurements for the 23% improvement.
 
-[Official AI Grand Prix website](https://www.theaigrandprix.com/) provides competition background; it is not a citation for this team's placement.
+[About the AI Grand Prix](https://www.theaigrandprix.com/)
 
-**Source and attribution:** This personal case study documents collaborative work. Team code, flight logs, trained models, and a reproducible benchmark package are not distributed here.
+**About this repository:** This write-up describes my contributions to the team project. Team code, flight logs, models, and benchmark files are not included.
 
 **Technologies:** camera/IMU fusion, error-state EKF, computer vision, geometric control, TensorRT
 
